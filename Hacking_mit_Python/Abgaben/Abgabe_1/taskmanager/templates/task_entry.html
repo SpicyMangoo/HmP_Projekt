@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block title %} Login Page {% endblock %} {% block
+content %}
+<body class="text-center">
+  <div class="container">
+    <form
+      method="POST"
+      class="form-register"
+      action="/task_entry"
+      style="color: black"
+    >
+      <br />
+      <img class="mb-4" src="static/satellit.png" alt="" style="width: 200px" />
+      <br />
+      <h1 class="h3 mb-3 font-weight-normal">Please Enter New Task</h1>
+      <label for="userID" class="form-label">User</label>
+      <input type="text" id="userID" name="userID" class="form-control" />
+      <label for="title" class="form-label">Title</label>
+      <input type="text" id="title" name="title" class="form-control" />
+      <label for="description" class="form-label">Description</label>
+      <textarea
+        class="form-control"
+        id="description"
+        name="description"
+        rows="3"
+      ></textarea>
+
+      <br />
+      <button type="submit" class="btn btn-dark">Enter</button>
+    </form>
+  </div>
+  <!-- <script>
+    $(document).ready(function(){
+      $("#userID").val = document.cookie
+    })
+  </script> -->
+</body>
+
+{% endblock %}

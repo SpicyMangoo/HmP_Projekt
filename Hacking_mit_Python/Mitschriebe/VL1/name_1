@@ -1,0 +1,4 @@
+print(f"call this module {__name__}")
+
+if __name__ == "__main__":
+    print(f"This is __main__ (name_1) {__name__}")
